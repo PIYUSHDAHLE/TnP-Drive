@@ -1,0 +1,13 @@
+electing the Element
+	1.	Write a function to select a <div> with the ID container and log it to the console.
+	2.	Select all <li> elements inside a <ul> with the class menu and log them as an array.
+	3.	Write code to select the first <h1> element on a webpage and change its color to blue.
+	4.	Select the element with the class card and add a border to it using JavaScript.
+	5.	Write a function to log all elements with the tag name button to the console.
+
+Changing the Text in JS
+	6.	Select a <p> element with the class description and change its text to "Updated description".
+	7.	Write a function that takes an ID of an element and changes its text to "Hello, World!".
+	8.	Select a button with the ID submit and set its text to "Submit Form".
+	9.	Replace the text inside a <span> element with the class price to "₹499".
+	10.	Write a function to change the text of all <h2> elements on the page to "Welcome to My Page".

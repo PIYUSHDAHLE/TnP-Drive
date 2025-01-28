@@ -1,0 +1,25 @@
+
+// 1.	Write a function to change the text of all <h2> elements on the page to "Welcome to My Page".
+
+// 2.	Write a function that takes an element ID and replaces its content with a <button>Click Me!</button>.
+
+
+// 3.	Create a function that takes an ID and adds an <img> tag with a placeholder image URL inside the element.
+
+
+// 4.	Add a submit event listener to a form with the ID signup that prevents the default form submission.
+
+// 5.	Write a function that adds a click event listener to all buttons on the page and changes their background to yellow when clicked.
+
+// 6.	Write a function to add an event listener to all buttons, and when clicked, toggle the class active on them.
+
+// 7.	Write a function that creates a to-do list by appending <li> elements dynamically inside a <ul> with the ID todo-list.
+
+// 8.	Create a function that validates an email input field by adding/removing a class error based on the input value.
+
+// 9.	Write code to create a modal popup by adding a new <div> with some content and a close button when a button is clicked.
+
+// 10.	Build a function that changes the theme of a webpage (light/dark mode) by toggling classes on the <body> element.
+
+
+// 11.	Create a dropdown menu where clicking an item highlights it and logs its text to the console.

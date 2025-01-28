@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Task</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
         button{
@@ -20,6 +24,7 @@
         }
         .active{
             background-color: green;
+            color: white;
         }
         .hidden{
             display: none;
@@ -43,6 +48,60 @@
             color: white;
             text-transform: uppercase;
         }
+        .error {
+            border: 2px solid red;
+            background-color: #fdd;
+        }
+ 
+        .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+
+    .modal {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+
+    .open-modal-btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .open-modal-btn:hover {
+      background-color: #0056b3;
+    }
     </style>
 </head>
 <body>
@@ -209,12 +268,51 @@
  <!-- <a href="https://www.google.com/">clickme</a> -->
 
 <!-- 40 -->
- <form id="registration">
+ <!-- <form id="registration">
      <input type="text" required placeholder="Enter Name">
      <input type="email" required placeholder="Enter Email">
      <input type="tel" required placeholder="Enter Phone No.">
-</form>
+</form> -->
+
+<!-- 41 -->
+<!-- <button >Sumit</button>
+<button >Sumit</button>
+<button >Sumit</button>
+<button >Sumit</button> -->
+
+<!-- 42 -->
+<!-- <div id="select" > OMG</div> -->
      
+<!-- 43 -->
+ <!-- <ul>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+ </ul> -->
+
+ <!-- 44 -->
+<!-- <div id="content">
+
+</div> -->
+
+<!-- 45 -->
+ <!-- <img class="w-[300px] w-[400px]" src="https://imgcdn.stablediffusionweb.com/2024/3/6/60f6a201-6d52-4650-8c6a-8e28405e7f42.jpg" alt="NA"> -->
+
+ <!-- 46 -->
+  <!-- <ul id="todo-list"></ul> -->
+
+<!-- 47 -->
+<!-- <form>
+    <label for="email">Email: </label>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <button type="submit">Submit</button>
+</form> -->
+
+<!-- 48 -->
+<button class="open-modal-btn" onclick="openModal()">Open Modal</button>
+
+
 <script src="script.js"></script>
 </body>
 </html>

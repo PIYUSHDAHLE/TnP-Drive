@@ -333,39 +333,134 @@
 // setData(div)
 
 // 	39.	Select a <a> tag and add a target="_blank" attribute to open the link in a new tab.
-document.addEventListener('DOMContentLoaded', function() {
-    const a = document.querySelector('a');
-    if (a) {
-        a.setAttribute('target', '_blank');
-        console.log(a);
-    }
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     const a = document.querySelector('a');
+//     if (a) {
+//         a.setAttribute('target', '_blank');
+//         console.log(a);
+//     }
+// });
 
 
 
 // 	40.	Remove the required attribute from all <input> elements inside a form with the ID registration.
-const form =  document.querySelector('#registration') 
-if (form) {
-    const input =  form.querySelectorAll('input') 
-    input.forEach((e)=>{
-            e.removeAttribute('required')
-        })
-}
+// const form =  document.querySelector('#registration') 
+// if (form) {
+//     const input =  form.querySelectorAll('input') 
+//     input.forEach((e)=>{
+//             e.removeAttribute('required')
+//         })
+// }
 
 
 // Combining Multiple Topics
 // 	41.	Write a function to add an event listener to all buttons, and when clicked, toggle the class active on them.
-
+// function toggleBtn() {
+//     const btn = document.querySelectorAll('button');
+//     btn.forEach((e)=>{
+//          e.addEventListener('click',()=>{
+//             e.classList.toggle('active')
+//          })
+//     })
+// }
+// toggleBtn();
 
 // 	42.	Create a function to select a <div> by ID, add a class selected, change its text to "Hello", and set its background color to yellow.
+// function select() {
+//     const osm = document.querySelector('#select')
+//     if (osm) {
+//         osm.classList.add('selected')
+//         osm.textContent = 'Hello'
+//         osm.style.backgroundColor = 'yellow'
+//     }
+// }
+// select()
+
 // 	43.	Add a click event listener to all <li> elements inside a <ul> that logs the text content of the clicked item.
+
+// const li = document.querySelectorAll('li');
+
+// li.forEach( e => {
+//   e.addEventListener('click',()=>{
+//         console.log(e.textContent);
+//   })
+// })
+
+
 // 	44.	Write a function to add a new <p> element inside a <div> with the ID content and set its text to "New Paragraph".
+// const div = document.querySelector('#content')
+// function addNew(d) {
+//     const p = document.createElement('p');
+//     p.textContent = 'New Paragraph';
+//     d.appendChild(p);
+// }
+// addNew(div)
+
 // 	45.	Add a mouseover event listener to an <img> that changes its src attribute to "hover.jpg".
+// const img =  document.querySelector('img')
+
+// img.addEventListener('mouseover',()=>{
+//            img.src = 'https://i.pinimg.com/736x/71/fd/a1/71fda1072649b456dd33fd08fd08ef05.jpg'
+// })
+// img.addEventListener('mouseout',()=>{
+//            img.src = 'image.webp'
+// })
 
 // Real-Life Scenarios
 // 	46.	Write a function that creates a to-do list by appending <li> elements dynamically inside a <ul> with the ID todo-list.
+// function todo() {
+//     const ul = document.querySelector('#todo-list');
+//     tasks = ['coding','dancing','cooking']
+//     tasks.forEach(t => {
+//         let li =  document.createElement('li')
+//         li.textContent = t;
+//         ul.appendChild(li);
+//     }); 
+// }
+// todo()
+
 // 	47.	Create a function that validates an email input field by adding/removing a class error based on the input value.
+// const emailInput = document.querySelector('#email');
+
+// function validates() {
+//     const eVal = emailInput.value;
+//     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+//     if (!regex.test(eVal)) {
+//         emailInput.classList.add('error')
+//     } else {
+//         emailInput.classList.remove('error')
+//     }
+// }
+
+// emailInput.addEventListener('input',validates)
+
+
 // 	48.	Write code to create a modal popup by adding a new <div> with some content and a close button when a button is clicked.
+function openModal() {
+
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <h2>Modal Title</h2>
+      <p>This is a dynamically created modal popup.</p>
+    `;
+
+    overlay.appendChild(modal);
+
+    document.body.appendChild(overlay);
+
+    window.closeModal = function () {
+      document.body.removeChild(overlay);
+    };
+  }
+
 // 	49.	Build a function that changes the theme of a webpage (light/dark mode) by toggling classes on the <body> element.
+
+
+
 // 	50.	Create a dropdown menu where clicking an item highlights it and logs its text to the console.
 

@@ -461,6 +461,5 @@ function openModal() {
 // 	49.	Build a function that changes the theme of a webpage (light/dark mode) by toggling classes on the <body> element.
 
 
-
 // 	50.	Create a dropdown menu where clicking an item highlights it and logs its text to the console.
 
